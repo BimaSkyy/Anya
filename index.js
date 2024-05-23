@@ -41,9 +41,9 @@ const queue = async.queue(async (task, callback) => {
     }
 
     const isolatedCharacterAI = new CharacterAI();
-    await isolatedCharacterAI.authenticateWithToken(accessToken);
+    await isolatedCharacterAI.authenticateWithToken("JTdCJTIyZGV2aWNlSWQlMjIlM0ElMjI5OTAwMWUwMS1lNGM0LTQwZDktODliMS0wMWVmNDIxZTc3ZDMlMjIlMkMlMjJ1c2VySWQlMjIlM0ElMjIyMjgzMjg5NjYlMjIlMkMlMjJzZXNzaW9uSWQlMjIlM0ExNzE2NDgyMzY1MDA2JTJDJTIyb3B0T3V0JTIyJTNBZmFsc2UlMkMlMjJsYXN0RXZlbnRUaW1lJTIyJTNBMTcxNjQ4MjU1NTQ4NyUyQyUyMmxhc3RFdmVudElkJTIyJTNBMTQ0JTJDJTIycGFnZUNvdW50ZXIlMjIlM0E2JTdE");
 
-    const chat = await isolatedCharacterAI.createOrContinueChat(characterId);
+    const chat = await isolatedCharacterAI.createOrContinueChat("ZVUK_CGjEymmyNInVX-0LzsvfnacOEQMIn7fxBZlQkU");
     const start = Date.now();
 
     const browser = await initializeBrowser();
